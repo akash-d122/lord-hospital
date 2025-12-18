@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react"
+import { Phone, MapPin, Cross } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const DIRECTIONS_URL = "https://www.google.com/maps/search/?api=1&query=Lord+Hospital+Tadipatri+Andhra+Pradesh"
@@ -8,8 +8,8 @@ export function StickyHeader() {
     <header className="sticky top-0 z-50 w-full bg-white border-b border-border shadow-sm">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">L</span>
+          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+            <Cross className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
           </div>
           <span className="font-semibold text-foreground text-lg">Lord Hospital</span>
         </div>
