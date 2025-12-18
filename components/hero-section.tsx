@@ -8,19 +8,20 @@ const DIRECTIONS_URL =
 export function HeroSection() {
   return (
     <section className="relative bg-gradient-to-b from-sky-50 to-white">
-      <div className="relative w-full h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] overflow-hidden">
+      <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-80 overflow-hidden">
         <Image
           src="/images/hospital-building.png"
           alt="Lord Hospital building - Modern healthcare facility in Tadipatri"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center scale-125"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-sky-50 via-transparent to-transparent" />
+        {/* Bottom gradient overlay for visual clarity */}
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white via-white/80 to-transparent" />
       </div>
 
-      <div className="container mx-auto text-center max-w-2xl px-4 py-8 md:py-10">
+      <div className="container mx-auto text-center max-w-2xl px-4 py-6 md:py-8">
         <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6 animate-pulse">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
