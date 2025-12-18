@@ -49,7 +49,7 @@ export function VideoSection() {
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl bg-slate-900 ring-1 ring-border">
           {isPlaying ? (
             <iframe
-              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&rel=0&modestbranding=1`}
+              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&rel=0&modestbranding=1`}
               title="Lord Hospital Community Initiative Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

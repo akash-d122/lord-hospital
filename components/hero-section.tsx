@@ -8,16 +8,16 @@ const DIRECTIONS_URL =
 export function HeroSection() {
   return (
     <section className="relative bg-gradient-to-b from-sky-50 to-white">
-      <div className="relative w-full h-60 sm:h-72 md:h-96 lg:h-[28rem] overflow-hidden">
+      <div className="relative w-full h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] overflow-hidden">
         <Image
           src="/images/hospital-building.png"
           alt="Lord Hospital building - Modern healthcare facility in Tadipatri"
           fill
-          className="object-cover object-[center_25%]"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-sky-50 via-sky-50/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-sky-50 via-transparent to-transparent" />
       </div>
 
       <div className="container mx-auto text-center max-w-2xl px-4 py-8 md:py-10">
