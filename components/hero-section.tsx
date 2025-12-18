@@ -7,7 +7,7 @@ const DIRECTIONS_URL =
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-b from-sky-50 to-white h-[100vh] overflow-hidden">
+    <section className="relative bg-gradient-to-b from-sky-50 to-white h-[93vh] overflow-hidden">
       <div className="flex flex-col h-full">
         {/* Hero image: exactly 45vh on mobile, slightly larger on bigger breakpoints */}
         <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[52vh] lg:h-[55vh] overflow-hidden">
@@ -26,7 +26,7 @@ export function HeroSection() {
         </div>
 
         {/* Content: keep within remaining space; prevent overflow on small devices */}
-        <div className="container mx-auto text-center max-w-2xl px-4 pt-0 pb-3 -mt-1 md:mt-0 md:py-6 flex-1 min-h-0 flex flex-col justify-center">
+        <div className="container mx-auto text-center max-w-2xl px-4 pt-0 pb-3 -mt-5 md:mt-0 md:py-6 flex-1 min-h-0 flex flex-col justify-center">
           <div className="inline-flex w-fit mx-auto items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6 animate-pulse">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
