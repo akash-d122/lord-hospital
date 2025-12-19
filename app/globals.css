@@ -132,32 +132,40 @@
 @layer utilities {
   /* Reveal-on-scroll (transform/opacity only; no layout shift) */
   .reveal {
+    --reveal-delay: 0ms;
     opacity: 0;
-    transform: translate3d(0, 24px, 0);
+    transform: translate3d(0, 30px, 0);
+    filter: blur(7px);
     transition:
-      transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
-      opacity 720ms cubic-bezier(0.22, 1, 0.36, 1);
-    will-change: transform, opacity;
+      transform 840ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay),
+      opacity 760ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay),
+      filter 800ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay);
+    will-change: transform, opacity, filter;
   }
 
   .reveal--visible {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+    filter: blur(0px);
   }
 
   /* Variant: subtle scale-in */
   .reveal-scale {
+    --reveal-delay: 0ms;
     opacity: 0;
-    transform: translate3d(0, 28px, 0) scale(0.95);
+    transform: translate3d(0, 32px, 0) scale(0.965);
+    filter: blur(8px);
     transition:
-      transform 780ms cubic-bezier(0.22, 1, 0.36, 1),
-      opacity 780ms cubic-bezier(0.22, 1, 0.36, 1);
-    will-change: transform, opacity;
+      transform 900ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay),
+      opacity 800ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay),
+      filter 860ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay);
+    will-change: transform, opacity, filter;
   }
 
   .reveal-scale.reveal--visible {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0px);
   }
 }
 
@@ -166,6 +174,7 @@
   .reveal-scale {
     opacity: 1 !important;
     transform: none !important;
+    filter: none !important;
     transition: none !important;
   }
 }

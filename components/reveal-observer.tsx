@@ -19,6 +19,16 @@ export function RevealObserver() {
       return
     }
 
+    // Apply a gentle, consistent stagger so sections flow in sequence on scroll.
+    // Uses a CSS custom property consumed by the `.reveal` / `.reveal-scale` utilities.
+    const baseStagger = 140 // ms between elements (within requested 120–160ms window)
+    nodes.forEach((node, index) => {
+      const explicitDelay = Number(node.dataset.revealDelay ?? "0")
+      const staggerDelay = index * baseStagger
+      const totalDelay = Math.max(0, explicitDelay + staggerDelay)
+      node.style.setProperty("--reveal-delay", `${totalDelay}ms`)
+    })
+
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
