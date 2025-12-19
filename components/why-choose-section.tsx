@@ -30,8 +30,8 @@ const reasons = [
 
 export function WhyChooseSection() {
   return (
-    <section className="px-4 py-12 md:py-16 bg-white">
-      <div className="container mx-auto max-w-4xl">
+    <section data-reveal className="px-4 py-12 md:py-16 bg-white reveal">
+      <div className="container mx-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8">Why Choose Lord Hospital</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

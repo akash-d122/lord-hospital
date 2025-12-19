@@ -11,8 +11,8 @@ const MAP_EMBED_URL = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192
 
 export function MapSection() {
   return (
-    <section className="px-4 py-12 md:py-16 bg-white">
-      <div className="container mx-auto max-w-4xl">
+    <section data-reveal className="px-4 py-12 md:py-16 bg-white reveal">
+      <div className="container mx-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <div className="flex items-center justify-center gap-2 mb-3">
           <MapPin className="w-5 h-5 text-primary" />
           <span className="text-sm font-medium text-primary uppercase tracking-wide">Location</span>

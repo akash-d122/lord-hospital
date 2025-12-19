@@ -7,10 +7,10 @@ const DIRECTIONS_URL =
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-b from-sky-50 to-white h-[93vh] overflow-hidden">
+    <section data-reveal className="relative bg-gradient-to-b from-sky-50 to-white h-[93vh] overflow-hidden reveal-scale">
       <div className="flex flex-col h-full">
         {/* Hero image: exactly 45vh on mobile, slightly larger on bigger breakpoints */}
-        <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[52vh] lg:h-[55vh] overflow-hidden">
+        <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[52vh] lg:h-[42vh] overflow-hidden">
           <Image
             src="/images/hospital-building.png"
             alt="Lord Hospital building - Modern healthcare facility in Tadipatri"
@@ -26,7 +26,7 @@ export function HeroSection() {
         </div>
 
         {/* Content: keep within remaining space; prevent overflow on small devices */}
-        <div className="container mx-auto text-center max-w-2xl px-4 pt-0 pb-3 -mt-5 md:mt-0 md:py-6 flex-1 min-h-0 flex flex-col justify-center">
+        <div className="container mx-auto text-center max-w-2xl lg:max-w-4xl xl:max-w-5xl px-4 pt-0 pb-3 -mt-5 md:mt-0 md:py-6 flex-1 min-h-0 flex flex-col justify-center">
           <div className="inline-flex w-fit mx-auto items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6 animate-pulse">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
@@ -36,18 +36,18 @@ export function HeroSection() {
             Open 24 Hours
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 text-balance">
             Lord Hospital
           </h1>
 
-          <p className="text-xl md:text-2xl text-primary font-semibold mb-3">24/7 Emergency & Medical Care</p>
+          <p className="text-xl md:text-2xl text-primary font-semibold mb-4">24/7 Emergency & Medical Care</p>
 
-          <p className="text-muted-foreground text-base md:text-lg mb-8 text-pretty max-w-lg mx-auto">
+          <p className="text-muted-foreground text-base md:text-lg mb-12 text-pretty max-w-lg mx-auto">
             Trusted community healthcare serving Tadipatri and surrounding areas with compassionate, quality medical
             services.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-3 justify-center">
             <Button
               asChild
               size="lg"

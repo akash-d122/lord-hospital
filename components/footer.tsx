@@ -4,8 +4,8 @@ const DIRECTIONS_URL = "https://www.google.com/maps/search/?api=1&query=Lord+Hos
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 px-4 py-8">
-      <div className="container mx-auto max-w-4xl">
+    <footer data-reveal className="bg-slate-900 text-slate-300 px-4 py-8 reveal">
+      <div className="container mx-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           <div>
             <h3 className="text-white font-bold text-lg mb-3">Lord Hospital</h3>

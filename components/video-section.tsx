@@ -129,8 +129,8 @@ export function VideoSection() {
   }, [isMounted, isPlaying, tryUnmuteAndPlay])
 
   return (
-    <section ref={sectionRef} className="px-4 py-12 md:py-16 bg-gradient-to-b from-sky-50 to-white">
-      <div className="container mx-auto max-w-3xl">
+    <section ref={sectionRef} data-reveal className="px-4 py-12 md:py-16 bg-gradient-to-b from-sky-50 to-white reveal">
+      <div className="container mx-auto max-w-3xl lg:max-w-5xl xl:max-w-6xl">
         <div className="flex items-center justify-center gap-2 mb-3">
           <Heart className="w-5 h-5 text-primary" />
           <span className="text-sm font-medium text-primary uppercase tracking-wide">Community Initiative</span>

@@ -7,10 +7,12 @@ import { WhyChooseSection } from "@/components/why-choose-section"
 import { VisitingSection } from "@/components/visiting-section"
 import { MapSection } from "@/components/map-section"
 import { Footer } from "@/components/footer"
+import { RevealObserver } from "@/components/reveal-observer"
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-background">
+      <RevealObserver />
       <StickyHeader />
       <HeroSection />
       <ServicesSection />

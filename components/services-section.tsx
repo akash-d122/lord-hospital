@@ -12,8 +12,8 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section className="px-4 pt-4 pb-12 md:py-16 bg-white">
-      <div className="container mx-auto max-w-4xl">
+    <section data-reveal className="px-4 pt-4 pb-12 md:py-16 bg-white reveal">
+      <div className="container mx-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-3">Our Services</h2>
         <p className="text-muted-foreground text-center mb-8 max-w-md mx-auto">
           Comprehensive healthcare services for you and your family

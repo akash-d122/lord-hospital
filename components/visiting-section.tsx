@@ -6,8 +6,8 @@ const DIRECTIONS_URL = "https://www.google.com/maps/search/?api=1&query=Lord+Hos
 
 export function VisitingSection() {
   return (
-    <section className="px-4 py-12 md:py-16 bg-slate-50">
-      <div className="container mx-auto max-w-2xl">
+    <section data-reveal className="px-4 py-12 md:py-16 bg-slate-50 reveal">
+      <div className="container mx-auto max-w-2xl lg:max-w-4xl xl:max-w-5xl">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8">Visit Us</h2>
 
         <Card className="border-border shadow-sm">
